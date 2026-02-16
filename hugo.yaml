@@ -1,0 +1,103 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: Jane Austen
+
+mainSections: 
+  - poems
+  - journal
+
+params:
+  name: Jane Austen
+  description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+  social:
+    - name: Facebook
+      link:
+    - name: Instagram
+      link:
+    - name: GitHub
+      link:
+  web3forms_access_key: # Paste your Web3Forms access key here!
+  cover: /images/fallbackogcover.jpg
+  theme:
+    color: "#fb7185"
+
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
+    renderer:
+      hardWraps: true
+      unsafe: true
+
+outputs:
+  home:
+  - html
+  - rss
+  section:
+  - html
+  taxonomy:
+  - html
+  term:
+  - html
+
+related:
+  includeNewer: true
+  indices:
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: keywords
+    pattern: ''
+    toLower: false
+    type: basic
+    weight: 80
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: date
+    pattern: ''
+    toLower: false
+    type: basic
+    weight: 10
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: tags
+    pattern: ''
+    toLower: false
+    type: basic
+    weight: 100
+  threshold: 25
+  toLower: false
+
+menus:
+  main:
+
+    - name: column1
+    - weight: 10
+
+    - name: Poems
+      pageRef: /poems
+      weight: 1
+      parent: column1
+    - name: Journal
+      pageRef: /journal
+      weight: 2
+      parent: column1
+
+    - name: column2
+    - weight: 20
+
+    - name: About
+      pageRef: /about
+      weight: 30
+      parent: column2
+    - name: Contact
+      pageRef: /contact
+      weight: 40
+      parent: column2
+
+# 1. Set up front matter fields for cover image
+# 2. Write the pre-fetch script:
+# 3. In NodeJS, read all the markdown files that are considered posts
+# 4. Iterate through them; for each one, only apply new cover parameters if they don't exist already
+# 5. I'll need YAML parsing in Node, set up the action to run before hugo building, and set up an Unsplash API key as an environment secret

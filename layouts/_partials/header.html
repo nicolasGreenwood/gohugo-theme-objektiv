@@ -1,0 +1,31 @@
+<r-grid columns="4" columns-s="2">
+    <r-cell span="2">
+        <h1 class="base-font-size bold">
+            <a class="flex-row-baseline" href="{{ .Site.Home.RelPermalink }}">
+                {{ with resources.Get "icons/favicon.svg" }} 
+                    {{ with resources.ExecuteAsTemplate "icons/favicon.svg" $ . }}
+                    <img class="site-icon" src="{{ .RelPermalink }}" alt="site icon" />
+                    {{ end }} 
+                {{ end }}
+                {{ .Site.Title }}
+            </a>
+        </h1>
+    </r-cell>
+    <r-cell span="2">
+        <nav>
+            <r-grid columns="2">
+                {{ range site.Menus.main }} {{ if .HasChildren }}
+                <r-cell>
+                    <ul class="compact list-none padding0">
+                        {{ range .Children }}
+                        <li>
+                            <a href="{{ .URL }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </r-cell>
+                {{ end }} {{ end }}
+            </r-grid>
+        </nav>
+    </r-cell>
+</r-grid>

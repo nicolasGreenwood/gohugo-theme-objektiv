@@ -1,0 +1,11 @@
+{{ define "main" }}
+<r-grid class="padding-y2">
+    <r-cell span="2" span-s="row">
+        <p class="serif large">{{ .Params.side_paragraph }}</p>
+    </r-cell>
+    <r-cell span="3-4" span-s="row" flow-cols="2" flow-cols-s="1">
+        <img style="column-span: all;" src="{{ .Params.cover }}" width="100%" alt="">
+        {{ .Content }}
+    </r-cell>
+</r-grid>
+{{ end }}

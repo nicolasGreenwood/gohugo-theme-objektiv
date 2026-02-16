@@ -1,0 +1,53 @@
+<r-grid>
+    <r-cell span="row" class="border-bottom">
+        <h3>{{ .Site.Title }}</h3>
+    </r-cell>
+    <r-cell>
+        <h5>Sections</h5>
+        <ul class="compact list-none">
+            {{ range .Site.Sections.ByWeight }}
+            <li>
+                <a class="opacity6 xsmall" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </r-cell>
+    <r-cell span-s="row">
+        <h5>Tags</h5>
+        <ul class="compact list-none">
+            {{ range .Site.Taxonomies.tags }}
+            <li>
+                <a class="opacity6 xsmall" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </r-cell>
+    <r-cell span-s="row">
+        <h5>Social</h5>
+        <ul class="compact list-none">
+            {{ range .Site.Params.social }}
+            <li>
+                <a class="opacity6 xsmall" href="{{ .link }}" target="_blank">{{ .name }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </r-cell>
+    <r-cell span-s="row">
+        <h5>More</h5>
+        <ul class="compact list-none">
+            <li>
+                <a class="opacity6 xsmall" href="/index.xml">RSS Feed</a>
+            </li>
+            <li>
+                <a class="opacity6 xsmall" href="/sitemap.xml">Site map</a>
+            </li>
+            <li>
+                <a class="opacity6 xsmall" href="/contact/">Report a problem</a>
+            </li>
+        </ul>
+    </r-cell>
+    <r-cell span="row" class="border-bottom">
+        <p class="opacity6 small bold">Built by <a href="https://nicolasgreenwood.github.io" target="_blank">Nicolas</a>, powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://rsms.me/raster/" target="_blank">Raster</a>.</p>
+        <p class="opacity6 small bold margin0">© Copyright {{ .Site.Params.name }} {{ now.Year }}. All rights reserved.</p>
+    </r-cell>
+</r-grid>

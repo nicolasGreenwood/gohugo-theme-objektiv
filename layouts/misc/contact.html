@@ -1,0 +1,66 @@
+{{ define "main" }}
+<r-grid class="padding-y2">
+    <r-cell span="2-3" span-s="row"> {{ .Content }} </r-cell>
+    <r-cell span="2-3" span-s="row">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form" class="flex-col-center">
+            <input
+                type="hidden"
+                name="access_key"
+                value="{{ .Site.Params.web3forms_access_key }}"
+            />
+            <input
+                type="hidden"
+                name="subject"
+                value="New Submission from Web3Forms"
+            />
+            <input
+                type="hidden"
+                name="redirect"
+                value="https://web3forms.com/success"
+            />
+            <input
+                type="checkbox"
+                name="botcheck"
+                id=""
+                style="display: none"
+            />
+            <div>
+                <label for="name" class="xsmall bold">Your Name</label>
+                <input
+                    class="block w-full"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="John Doe"
+                    required
+                />
+            </div>
+            <div>
+                <label for="email" class="xsmall bold">Your Email Address</label>
+                <input
+                    class="block w-full"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="your@email.com"
+                    required
+                />
+            </div>
+            <div>
+                <label for="message" class="xsmall bold">Your Message</label>
+                <textarea
+                    class="block w-full"
+                    rows="5"
+                    name="message"
+                    id="message"
+                    placeholder="Write something..."
+                    required
+                ></textarea>
+            </div>
+            <div>
+                <button class="block w-full" type="submit">Send Message</button>
+            </div>
+        </form>
+    </r-cell>
+</r-grid>
+{{ end }}

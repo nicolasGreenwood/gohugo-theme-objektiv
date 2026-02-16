@@ -1,0 +1,67 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+{{ $description := .Site.Params.Description }}
+{{ if .Description }}
+    {{ $description = .Description }}
+{{ else if .Summary }}
+    {{ $description = .Summary }}
+{{ end }}
+<meta name="description" content="{{ $description | plainify }}">
+<link rel="canonical" href="{{ .Site.BaseURL }}">
+<meta name="robots" content="index, follow">
+{{ with resources.Get "icons/favicon.svg" }}
+    {{ with resources.ExecuteAsTemplate "icons/favicon.svg" $ . }}
+    <link rel="icon" href="{{ .RelPermalink }}" type="image/svg+xml">
+    {{ end }}
+{{ end }}
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ $description | plainify }}">
+{{ $og_image := .Site.Params.cover | absURL }}
+{{ if .Params.cover }}
+    {{ $og_image = .Params.cover | absURL }} 
+{{ end }}
+<meta property="og:image" content="{{ $og_image }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ $description | plainify }}">
+<meta name="twitter:image" content="{{ $og_image }}">
+<link rel="stylesheet" href="/css/raster2.css" />
+<!-- Design variables -->
+<style>
+    :root {
+        --fontSize: 16px;
+        --sansFont: "Inter";
+        --serifFont: "STIX Two Text";
+        --monoFont: "iaw-mono";
+        --lineHeight: calc(var(--fontSize) * 1.5);
+        --baseline: calc(var(--lineHeight) / 2);
+        --blockSpacingTop: 0px;
+        --blockSpacingBottom: var(--lineHeight);
+        --hrThickness: 2px;
+        --h1-size: 2.8rem;
+        --h2-size: 2.2rem;
+        --h3-size: 1.4rem;
+        --h4-size: 1.1rem;
+        --columnGap: calc(var(--lineHeight) * 2);
+        --rowGap: var(--lineHeight);
+        --displayScale: 1;
+        --pixel: 1px;
+        --foreground-color-rgb: 0, 0, 0;
+        --foreground-color-a: 1;
+        --foreground-color: rgba(
+            var(--foreground-color-rgb),
+            var(--foreground-color-a)
+        );
+        --background-color: #fff;
+        --theme-color: {{ .Site.Params.theme.color }};
+        --border-opacity: 0.15;
+        --border-color: rgba(
+            var(--foreground-color-rgb),
+            calc(var(--foreground-color-a) * var(--border-opacity))
+        );
+    }
+</style>
+<link rel="stylesheet" href="/css/custom.css" />

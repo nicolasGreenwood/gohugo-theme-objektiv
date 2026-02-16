@@ -1,0 +1,26 @@
+{{ define "main" }}
+<r-grid>
+    <r-cell span="2" span-s="row" class="padding-y1">
+        <h1>Tag: {{ .Title }}</h1>
+    </r-cell>
+    <r-cell span="row">
+        <ul class="content-list">
+            {{ $pages := .Pages }} 
+            {{ $paginator := .Paginate $pages.ByDate.Reverse 10 }} 
+            {{ range $paginator.Pages }} 
+            <li class="border-bottom">
+                <h2 class="serif large padding0">
+                    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                </h2>
+                <time class="serif large opacity4">
+                    {{ .Date | time.Format ":date_medium" }}
+                </time>
+            </li>
+            {{ end }}
+        </ul>
+    </r-cell>
+    <r-cell span="row" class="padding-y1">
+        {{ partial "pagination.html" . }}
+    </r-cell>
+</r-grid>
+{{ end }}

@@ -1,0 +1,59 @@
+{{ define "main" }}
+<r-grid class="padding-y2">
+    <r-cell span="2-3" span-s="row">
+        <h1 class="margin0">{{ .Title }}</h1>
+        <div class="flex-between">
+            <p class="xsmall opacity6 margin0">
+                <a href="{{ .CurrentSection.RelPermalink }}"
+                    >{{ .CurrentSection.LinkTitle }}</a
+                >
+                ·
+                <time>{{ .Date | time.Format ":date_medium" }}</time>
+            </p>
+            <p class="xsmall opacity6">{{ printf "%d min read" .ReadingTime }}</p>
+        </div>
+    </r-cell>
+    <r-cell span="2-3" span-s="row">
+        <img src="{{ .Params.Cover }}" class="cover-image" alt="" />
+    </r-cell>
+    <r-cell span="2-3" span-s="row">
+        <article>
+            {{ .Content }}
+        </article>
+    </r-cell>
+    <r-cell span="2-3" span-s="row">
+        {{ with .GetTerms "tags" }}
+        <hr class="margin-y2">
+        <h4>Tags:</h4>
+        <ul class="flex-h list-none padding0">
+            {{ range . }}
+            <li>
+                <a class="tag-link" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            </li>
+            {{ end }}
+        </ul>
+        {{ end }}
+    </r-cell>
+</r-grid>
+<r-grid>
+    <r-cell span="row" class="padding-y2">
+      <h3>Read more:</h3>
+        {{ with site.RegularPages.Related . | first 3 }}
+        <ul class="content-list">
+          {{ range . }}
+            <li class="border-bottom">
+                <h2 class="serif large padding0">
+                    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                </h2>
+                <time class="serif large opacity4"
+                    >{{ .Date | time.Format ":date_medium" }}</time
+                >
+            </li>
+          {{ end }}
+        </ul>
+        {{ else }}
+        <p>No related content found. Go back to <a href="{{ .CurrentSection.RelPermalink }}">{{ .CurrentSection.LinkTitle }}</a>.</p>
+        {{ end }}
+    </r-cell>
+</r-grid>
+{{ end }}
