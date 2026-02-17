@@ -15,7 +15,7 @@
         .Site.MainSections }} {{ range $latest_content.ByDate.Reverse.Limit 3 }}
         <r-cell span="2" span-s="row">
             <article>
-                <img src="{{ .Params.cover }}" class="cover-image" alt="thumbnail" />
+                <img src="{{ .Params.cover | relURL }}" class="cover-image" alt="thumbnail" />
                 <h3 class="base-font-size bold margin0">
                     <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
                 </h3>
@@ -39,7 +39,7 @@
     <r-grid {{ if not (modBool $i 2) }} class="reverse-col-dir" {{end}}>
         <r-cell span="2" span-s="row">
             <img
-                src="{{ .Params.Cover }}"
+                src="{{ .Params.Cover | relURL }}"
                 width="100%"
                 alt="journal thumnail"
             />
