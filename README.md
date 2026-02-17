@@ -22,9 +22,13 @@ Once you've created an account, it's time to create a repository.
 > ###### For my friend:
 > As a new GitHub user, I was always intimidated at the terms like "repository". Actually, there's nothing to be afraid of. A repository, or a "repo", is simply a place where all your code for one project lives. On your own computer, that usually looks like a folder with a bunch of subfolders and code files. And on GitHub, it's no different. When you open a new repo, it's like creating a new folder on your computer. Simple!
 
-Instead of creating a new repository and copying code files to it one by one, we'll do something a lot more efficient: we'll just make a clone of an existing one.
+Instead of creating a new repository and copying code files to it one by one, we'll do something a lot more efficient: we'll just make a fork of an existing one.
 
-First, make sure you're logged in and on your user dashboard (equivalent to [https://github.com](https://github.com) when you're logged in). Next, what we'll do is click on the "+" button in the upper right corner:
+
+> ###### For my friend:
+> A "fork" can also be a confusing term for beginners. A fork is nothing more than a copy of the original repository. When we fork a repository, we're basically making a special personalized copy of it for ourselves. If you've ever used the "spin-off" feature on Khan Academy, this is the exact same thing, but on GitHub.
+
+First, make sure you're logged in to GitHub. Now head over to the repository we want to fork. Here's the [link]().
 
 <img width="1403" height="731" alt="Screenshot 2026-02-16 at 20 53 12" src="https://github.com/user-attachments/assets/6b673d50-4991-41e9-874d-96e7ebcb70b3" />
 
