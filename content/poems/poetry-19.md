@@ -6,7 +6,7 @@ tags:
     - free verse
     - general
 params: 
-    cover: /images/poetry-19-cover.jpg
+    cover: images/poetry-19-cover.jpg
 ---
 
 At vero eos et accusam Heart, 

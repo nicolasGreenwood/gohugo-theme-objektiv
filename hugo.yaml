@@ -17,7 +17,7 @@ params:
     - name: GitHub
       link:
   web3forms_access_key: # Paste your Web3Forms access key here!
-  cover: /images/fallbackogcover.jpg
+  cover: images/fallbackogcover.jpg
   theme:
     color: "#fb7185"
 
@@ -76,11 +76,11 @@ menus:
     - weight: 10
 
     - name: Poems
-      pageRef: /poems
+      pageRef: poems
       weight: 1
       parent: column1
     - name: Journal
-      pageRef: /journal
+      pageRef: journal
       weight: 2
       parent: column1
 
@@ -88,11 +88,11 @@ menus:
     - weight: 20
 
     - name: About
-      pageRef: /about
+      pageRef: about
       weight: 30
       parent: column2
     - name: Contact
-      pageRef: /contact
+      pageRef: contact
       weight: 40
       parent: column2
 

@@ -31,7 +31,7 @@ tags:
     - $TAG1
     - $TAG2
 params: 
-    cover: /images/poetry-$i-cover.jpg
+    cover: images/poetry-$i-cover.jpg
 ---
 
 At vero eos et accusam $T2, 

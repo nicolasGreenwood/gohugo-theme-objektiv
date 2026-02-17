@@ -6,7 +6,7 @@ tags:
     - solitude
     - free verse
 params: 
-    cover: /images/poetry-2-cover.jpg
+    cover: images/poetry-2-cover.jpg
 ---
 
 At vero eos et accusam Heart, 

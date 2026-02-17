@@ -6,7 +6,7 @@ tags:
     - love
     - general
 params: 
-    cover: /images/poetry-11-cover.jpg
+    cover: images/poetry-11-cover.jpg
 ---
 
 At vero eos et accusam Day, 

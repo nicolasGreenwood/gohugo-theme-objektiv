@@ -6,7 +6,7 @@ tags:
     - joy
     - free verse
 params: 
-    cover: /images/poetry-9-cover.jpg
+    cover: images/poetry-9-cover.jpg
 ---
 
 At vero eos et accusam Face, 

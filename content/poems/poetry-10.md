@@ -6,7 +6,7 @@ tags:
     - sad
     - general
 params: 
-    cover: /images/poetry-10-cover.jpg
+    cover: images/poetry-10-cover.jpg
 ---
 
 At vero eos et accusam Heart, 

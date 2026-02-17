@@ -6,7 +6,7 @@ tags:
     - solitude
     - sad
 params: 
-    cover: /images/poetry-25-cover.jpg
+    cover: images/poetry-25-cover.jpg
 ---
 
 At vero eos et accusam Sleep, 

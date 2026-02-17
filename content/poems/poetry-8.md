@@ -6,7 +6,7 @@ tags:
     - sad
     - joy
 params: 
-    cover: /images/poetry-8-cover.jpg
+    cover: images/poetry-8-cover.jpg
 ---
 
 At vero eos et accusam Day, 

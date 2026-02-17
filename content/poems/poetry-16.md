@@ -6,7 +6,7 @@ tags:
     - free verse
     - sad
 params: 
-    cover: /images/poetry-16-cover.jpg
+    cover: images/poetry-16-cover.jpg
 ---
 
 At vero eos et accusam Face, 

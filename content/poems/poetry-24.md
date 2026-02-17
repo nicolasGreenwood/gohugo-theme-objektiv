@@ -6,7 +6,7 @@ tags:
     - love
     - joy
 params: 
-    cover: /images/poetry-24-cover.jpg
+    cover: images/poetry-24-cover.jpg
 ---
 
 At vero eos et accusam Day, 

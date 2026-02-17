@@ -6,7 +6,7 @@ tags:
     - love
     - general
 params: 
-    cover: /images/poetry-13-cover.jpg
+    cover: images/poetry-13-cover.jpg
 ---
 
 At vero eos et accusam Heart, 

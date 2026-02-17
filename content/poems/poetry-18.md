@@ -6,7 +6,7 @@ tags:
     - joy
     - solitude
 params: 
-    cover: /images/poetry-18-cover.jpg
+    cover: images/poetry-18-cover.jpg
 ---
 
 At vero eos et accusam Sleep, 

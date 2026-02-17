@@ -6,7 +6,7 @@ tags:
     - love
     - solitude
 params: 
-    cover: /images/poetry-12-cover.jpg
+    cover: images/poetry-12-cover.jpg
 ---
 
 At vero eos et accusam Heart, 

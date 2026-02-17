@@ -6,7 +6,7 @@ tags:
     - love
     - general
 params: 
-    cover: /images/poetry-4-cover.jpg
+    cover: images/poetry-4-cover.jpg
 ---
 
 At vero eos et accusam Sky, 

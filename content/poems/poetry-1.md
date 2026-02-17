@@ -6,7 +6,7 @@ tags:
     - free verse
     - solitude
 params: 
-    cover: /images/poetry-1-cover.jpg
+    cover: images/poetry-1-cover.jpg
 ---
 
 At vero eos et accusam Sky, 

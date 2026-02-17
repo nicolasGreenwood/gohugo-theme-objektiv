@@ -6,7 +6,7 @@ tags:
     - sad
     - free verse
 params: 
-    cover: /images/poetry-3-cover.jpg
+    cover: images/poetry-3-cover.jpg
 ---
 
 At vero eos et accusam Heart, 
