@@ -1,5 +1,7 @@
 # Hugo theme Objektiv
 
+<img width="1427" height="720" alt="Screenshot 2026-02-18 at 18 49 30" src="https://github.com/user-attachments/assets/eb609906-fab4-4ddf-82b1-bb5e6a1c1f06" />
+
 Welcome! This is a custom theme built for a friend. However, if you find the theme suitable for your needs, feel free to follow the intructions below to use the theme for yourself! This theme is free and open-source.
 
 ## How to start using this theme
