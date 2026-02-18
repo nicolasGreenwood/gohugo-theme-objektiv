@@ -2,7 +2,7 @@
 <r-grid>
     <r-cell span="2" span-s="row" class="padding-y3">
         <p class="serif large">{{ .Site.Params.description }}</p>
-        <a href="/about/">Read more about me -></a>
+        <a href='{{ "about/" | relURL }}'>{{ .Site.Params.description_link_text }}</a>
     </r-cell>
 </r-grid>
 
@@ -61,11 +61,24 @@
     <r-grid>
         <r-cell span="2-3" span-s="row" class="center padding-y2">
             <h3>Subscribe</h3>
-            <p class="serif large">Never miss a post again with new content sent straight to your inbox.</p>
-            <form class="flex-col-center">
+            <p class="serif large">{{ .Site.Params.subscribe_promo_text }}</p>
+            <form 
+                class="flex-col-center embeddable-buttondown-form" 
+                action="https://buttondown.com/api/emails/embed-subscribe/{{ .Site.Params.buttondown_username }}"
+                method="post"
+                referrerpolicy="unsafe-url"
+            >
+            {{ if not .Site.Params.buttondown_username }}
                 <p class="xsmall red">*Subscription form functionality coming soon</p>
-                <input type="email" placeholder="your@email.com" disabled>
-                <button class="block bg-theme" disabled>Subscribe</button>
+            {{ end }}
+                <label for="bd-email" class="xsmall bold">Your Email Address:</label>
+                <input type="email" name="email" id="bd-email" placeholder="your@email.com"{{ if not .Site.Params.buttondown_username }} disabled{{ end }}>
+                <button class="block bg-theme" type="submit"{{ if not .Site.Params.buttondown_username }} disabled{{ end }}>Subscribe</button>
+                <p class="xsmall opacity6">
+                    <a href="https://buttondown.com/refer/{{ .Site.Params.buttondown_username }}" target="_blank">
+                      Powered by Buttondown.
+                    </a>
+                  </p>
             </form>
         </r-cell>
     </r-grid>
