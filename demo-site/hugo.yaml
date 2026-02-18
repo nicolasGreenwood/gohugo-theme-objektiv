@@ -1,39 +1,40 @@
-baseURL: "https://nicolasgreenwood.github.io/gohugo-theme-objektiv/" # put your base website url here. If your website lives at example.com, use https://example.com.
-languageCode: en-us # no need to touch this unless you need to switch to or add a new language.
-title: Objektiv Theme Demo # Write a title here! Using your name is recommended.
+baseURL: "https://nicolasgreenwood.github.io/gohugo-theme-objektiv/"
+languageCode: en-us 
+title: Objektiv Theme Demo 
 
-# no need to touch this unless you're adding/modifying sections in your site.
 mainSections: 
   - poems
   - journal
 
-# "params" means parameters. These are all custom settings for you to tweak!
 params:
-  name: Nicolas Greenwood # Put your actual name here (used for copyright statement).
-  description: # Explain your site in 2-3 sentences here. This is the first thing new visitors see when they land on your site's homepage.
-  social: # Add your social links here! You can add/remove as many as you like. Be sure to include a link to them too. It doesn't have to be limited to social media platforms. List all kinds of ways people can find you online!
+  name: Nicolas Greenwood 
+  description: Objektiv is a opinionated Hugo theme for writers and poets. With a clean, minimal interface, it's designed to make publishing and reading personal work simple and pleasant. 
+  description_link_text: Read more about Objektiv ->
+  subscribe_promo_text: Let visitors subscribe to your work with a functional email newsletter! Powered by Buttondown, free up to 100 subscribers.
+  buttondown_username: 
+  social: 
     - name: Facebook
       link:
     - name: Instagram
       link:
     - name: GitHub
       link:
-  web3forms_access_key: # Paste your Web3Forms access key here!
-  cover: images/fallbackogcover.jpg # this is a fallback cover image for the whole site. It's used for sharing links to your site on social media.
+  web3forms_access_key: 
+  cover: images/fallbackogcover.jpg 
   theme:
-    color: "#fb7185" # Change your theme color to whatever you like! It's set to a soft rose color. This color appears in the dot next to your site title, on buttons, and even on your favicon!
+    color: "#22d3ee"
 
-menus: # All the menus on the site.
+menus: 
   main: # The main menu is the one visible on the header of the site.
 
-    - name: column1 # It has two columns. This is the first one.
+    - name: column1
       weight: 10
 
-    - name: Poems # The name is the link text users see for each navigation link.
-      pageRef: poems # This is the actual link users will be taken to when they click on it. Here we're referencing the home page for the "poems" section.
-      weight: 1 # "weight" is just used to help sort links in the right order.
-      parent: column1 # We specify column1 as the parent menu element, since this link belongs to column 1.
-    - name: Journal # Same rules apply for all links on this menu! No need to modify these unless you want to change the site structure.
+    - name: Poems 
+      pageRef: poems 
+      weight: 1 
+      parent: column1 
+    - name: Journal 
       pageRef: journal
       weight: 2
       parent: column1
@@ -61,7 +62,6 @@ markup:
       hardWraps: true
       unsafe: true
 
-# This bit of code below helps connect your website to the Objektiv theme. It shouldn't be touched unless you're ready to switch to another theme.
 module:
   imports:
     - disable: false

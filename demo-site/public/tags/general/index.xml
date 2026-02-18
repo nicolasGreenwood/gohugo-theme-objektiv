@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>General on Objektiv Theme Demo</title>
+    <link>http://localhost:1313/gohugo-theme-objektiv/tags/general/</link>
+    <description>Recent content in General on Objektiv Theme Demo</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/gohugo-theme-objektiv/tags/general/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tearful Home No. 22</title>
+      <link>http://localhost:1313/gohugo-theme-objektiv/poems/poetry-22/</link>
+      <pubDate>Fri, 23 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gohugo-theme-objektiv/poems/poetry-22/</guid>
+      <description>I was inspired by the Tearful Home when writing this poem. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+    </item>
+    <item>
+      <title>Honest Record No. 16</title>
+      <link>http://localhost:1313/gohugo-theme-objektiv/journal/entry-16/</link>
+      <pubDate>Sat, 17 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gohugo-theme-objektiv/journal/entry-16/</guid>
+      <description>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst.</description>
+    </item>
+    <item>
+      <title>Sunlit Gate No. 15</title>
+      <link>http://localhost:1313/gohugo-theme-objektiv/poems/poetry-15/</link>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gohugo-theme-objektiv/poems/poetry-15/</guid>
+      <description>I was inspired by the Sunlit Gate when writing this poem. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+    </item>
+    <item>
+      <title>Thoughtful Page No. 14</title>
+      <link>http://localhost:1313/gohugo-theme-objektiv/journal/entry-14/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gohugo-theme-objektiv/journal/entry-14/</guid>
+      <description>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst.</description>
+    </item>
+    <item>
+      <title>Absent Place No. 12</title>
+      <link>http://localhost:1313/gohugo-theme-objektiv/poems/poetry-12/</link>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gohugo-theme-objektiv/poems/poetry-12/</guid>
+      <description>I was inspired by the Absent Place when writing this poem. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+    </item>
+    <item>
+      <title>Thoughtful Page No. 11</title>
+      <link>http://localhost:1313/gohugo-theme-objektiv/journal/entry-11/</link>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gohugo-theme-objektiv/journal/entry-11/</guid>
+      <description>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst.</description>
+    </item>
+    <item>
+      <title>Quiet Sky No. 7</title>
+      <link>http://localhost:1313/gohugo-theme-objektiv/poems/poetry-7/</link>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gohugo-theme-objektiv/poems/poetry-7/</guid>
+      <description>I was inspired by the Quiet Sky when writing this poem. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+    </item>
+    <item>
+      <title>Introspective Diary No. 5</title>
+      <link>http://localhost:1313/gohugo-theme-objektiv/journal/entry-5/</link>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gohugo-theme-objektiv/journal/entry-5/</guid>
+      <description>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut non enim eleifend felis pretium feugiat. Vivamus quis mi. Phasellus a est. Phasellus magna. In hac habitasse platea dictumst.</description>
+    </item>
+    <item>
+      <title>Sunlit Hands No. 1</title>
+      <link>http://localhost:1313/gohugo-theme-objektiv/poems/poetry-1/</link>
+      <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/gohugo-theme-objektiv/poems/poetry-1/</guid>
+      <description>I was inspired by the Sunlit Hands when writing this poem. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+    </item>
+  </channel>
+</rss>

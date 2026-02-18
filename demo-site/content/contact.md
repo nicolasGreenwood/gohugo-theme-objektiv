@@ -10,4 +10,6 @@ layout: contact
 
 # Questions? Comments?
 
-Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Vestibulum ullamcorper mauris at ligula. Fusce fermentum. Nullam cursus lacinia erat.
+Objektiv comes with a fully functional contact form you can connect to your email address to have messages sent straight to your inbox. Your email address is **not exposed on the webpage.** 
+
+Powered by Web3Forms, simply visit [their website](https://web3forms.com), get a unique access key, paste it into your website's configuration file, and you're good to go.
